@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="favicon_package_v0.16/site.webmanifest">
+    <link rel="mask-icon" href="favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/017a13057a.js" crossorigin="anonymous"></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>MyShop.kg</title>
+</head>
+    <body class="bg-dark" style="height: 1000px;">
+          
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light " data-aos="fade-down" data-aos-duration="1000">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="#" class="navbar-brand"><img class="card" src="img/logo.png"  alt="" ></a>
+
+            <div class="collapse navbar-collapse  justify-content-between" id="navbarTogglerDemo03">
+                
+                <div class="btn-group">
+                    <button type="button" class="btn btn-secondary">Главня</button>
+                    <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Виды товара</a>
+                      <a class="dropdown-item" href="#">Бренды</a>
+                      <a class="dropdown-item" href="#">Доставки</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">ВСЕ</a>
+                    </div>
+                  </div>
+
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-secondary">Товары</button>
+                    <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Обувы</a>
+                      <a class="dropdown-item" href="#">Одежды</a>
+                      <a class="dropdown-item" href="#">Спорт</a>
+                      <a class="dropdown-item" href="#">Военное</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">ВСЕ</a>
+                    </div>
+                  </div>
+
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-secondary">Кухня</button>
+                    <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Техники</a>
+                      <a class="dropdown-item" href="#">Ножы</a>
+                      <a class="dropdown-item" href="#">Одежды</a>
+                      <a class="dropdown-item" href="#">Посуды</a>
+                      <a class="dropdown-item" href="#">Мебели</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">ВСЕ</a>
+                    </div>
+                  </div>
+
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-secondary">Стройка</button>
+                    <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">АвтоТехники</a>
+                      <a class="dropdown-item" href="#">Для Обделку</a>
+                      <a class="dropdown-item" href="#">С нуля</a>
+                      <a class="dropdown-item" href="#">Электронные</a>
+                      <a class="dropdown-item" href="#">Без</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">ВСЕ</a>
+                    </div>
+                  </div>
+
+                <form class="form-inline my-2 my-lg-0">
+                  <input class="form-control mr-sm-3" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-primary bg-secondary my-2 my-sm-0" type="submit">Search</button>
+                </form>
+
+                <div class="pos-f-t">
+                    <div class="collapse" id="navbarToggleExternalContent">
+                      <div class="bg-dark p-4">
+                        <h4 class="text-white">Мы ждали вас!</h4>
+                        <span class="text-muted">Ваш выбор только радуют нас!</span>
+                        <div class="text-left">
+                            <p class="text-light m-0" >Связаться с нами</p>
+                            <a href="#" class="text-light"><i class="fa fa-whatsapp"></i></a>
+                            <a href="#" class="text-light"><i class="fa fa-instagram"></i></a>
+                        </div>
+                        
+                      </div>
+                    </div>
+                    <nav class="navbar navbar-light bg-light">
+                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                    </nav>
+                  </div>
+              </div>
+        </nav>
+
+        <main>
+          <div class="text-left"  data-aos="fade-up" data-aos-duration="1000">
+            <h1 class="text-primary ml-4 mt-4"> Наши Бренды</h1>
+          </div>
+
+          <div class="card-deck m-5">
+            <div class="card" data-aos="fade-left"  data-aos-duration="500">
+              <img class="card-img-top" src="img/myshop1.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Мы на топ </h5>
+                <p class="card-text">Наши товары всегда качественное и очень уверенное, мы не когда не подведим своих клиентах </p>
+                <p class="card-text"><small class="text-muted">С уважениям MyShopKG</small></p>
+              </div>
+            </div>
+
+            <div class="card" data-aos="fade-down" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
+              <img class="card-img-top" src="img/myshop2.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Наш бренд  уже на одеждах</h5>
+                <p class="card-text">Новости для наших лбителей, наш бренд уже на одеждах, покупаете от нас одежды хоть онлайн хоть примой вы получаете ещё один на подарок.</p>
+                <p class="card-text"><small class="text-muted">С уважениям MyShopKG</small></p>
+              </div>
+            </div>
+          </div>
+
+            <div class="card-deck m-4">
+              <div class="card" data-aos="fade-up" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
+                <img class="card-img-top max-width:180rem" style="height:500px" src="img/myshop3.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Наш бренд уже на всех</h5>
+                  <p class="card-text">Наши бренды уже на концтоварах, если вам нравится наши товары наши продукты, значить вы на плюсе, если вы любити нас то таропитись купить концтовары которые с нашими брендами, ваши денги остоется с вами, </p>
+                  <p class="card-text"><small class="text-muted">С уважениям MyShopKG</small></p>
+                </div>
+              </div>
+              <div class="card" data-aos="fade-up" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
+                <img class="card-img-top max-width:180rem" style="height:500px" src="img/myshop4.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Мы на социальных сетях</h5>
+                  <p class="card-text">Подпишитесь на нашу официальную учетную запись Facebook и будьте в курсе. Самое новое только для вас </p>
+                  <p class="card-text"><small class="text-muted">С уважениям MyShopKG</small></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="container">
+
+              <div class=" card text-center mb-2">
+                <h1 class="text-border-dark text-danger m-1 text-outline-danger  card-text-top" data-aos="fade-right">Наши популярные бренды</h1>
+              </div>
+
+              <div class="d-flex align-content-stretch flex-wrap">
+                <div class="card-columns">
+                  <div class="card">
+                    <img class="card-img-top" src="img/my.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Кухенные приборы</h5>
+                      <p class="card-text">Кухенные прибор быстро и вкусно готовить еду, эконом электор энерги, эконов ваши дрогоценные времии</p>
+                    </div>
+                  </div>
+
+                  <div class="card p-3">
+                    <blockquote class="blockquote mb-0 card-body">
+                      <p>Мы рады и благодарны за то, что вы выбрали нас, несмотря ни на что! Мы никогда не подводим наших клиентов.
+                        Мы стараемся никогда не продавать некачественную продукцию и всегда оправдываем ваше доверие. Ваше доверие всегда заставляет нас гордиться</p>
+                      <footer class="blockquote-footer">
+                        <small class="text-muted">
+                          С большим уважения! <cite title="Source Title">MyShop.kg</cite>
+                        </small>
+                      </footer>
+                    </blockquote>
+                  </div>
+
+                  <div class="card">
+                    <img class="card-img-top" src="img/my2.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Качественная косметика только для вас</h5>
+                      <p class="card-text">Косметика специальных марок. Ваша красота - это наше лицо</p>
+                      <p class="card-text"><small> С большим уважения!<cite title="Source Title"> MyShop.kg</cite></small></p>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img class="card-img" src="img/my6.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h5 class="card-title">Лучший уход за кожей</h5>
+                      <p class="card-text">Косметика высочайшего качества для вашего лица. Давайте попробуем самый надежный за раз. Выражение вашего лица - наша красота</p>
+                      <p class="card-text"><small> С большим уважения!<cite title="Source Title"> MyShop.kg</cite></small></p>
+                    </div>
+                  </div>
+
+                  <div class="card bg-primary text-white text-center p-3">
+                    <blockquote class="blockquote mb-0">
+                      <p>Прямо на вас стоит некоторые нашы популярные продуекты товары. Вы не ошибались выбрать нас!</p>
+                      <footer class="blockquote-footer">
+                        <small>
+                          С большим уважения!<cite title="Source Title"> MyShop.kg</cite>
+                        </small>
+                      </footer>
+                    </blockquote>
+                  </div>
+
+                  <div class="card">
+                    <img class="card-img-top" src="img/my4.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Аксессуары</h5>
+                      <p class="card-text">Мы рекомендуем товары только с гарантией от надежных и известных брендов</p>
+                      <small>
+                        С большим уважения!<cite title="Source Title"> MyShop.kg</cite>
+                      </small>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img class="card-img" src="img/my3.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h5 class="card-title">SamSung Gallaxy S20 +</h5>
+                      <p class="card-text">Ваши любимые смартфоны! Вы хорошо знаетк у нас всегда дешевые цены, ваши любимые сматрфоны тепер у нас больше дешевые</p>
+                      <small> С большим уважения!<cite title="Source Title"> MyShop.kg</cite></small>
+                    </div>
+                  </div>
+
+                  <div class="card p-3 text-right">
+                    <blockquote class="blockquote mb-0">
+                      <img class="card-img" src="img/my1.jpg" alt="Card image">
+                      <p>специальные и качественные защитные чехлы для любого из ваших любимых смартфонов</p>
+                      <footer class="blockquote-footer">
+                        <small>
+                          С большим уважения!<cite title="Source Title"> MyShop.kg</cite>
+                        </small>>
+                      </footer>
+                    </blockquote>
+                  </div>
+
+                  <div class="card">
+                    <img class="card-img" src="img/my5.jpg" alt="Card image">
+                    <div class="card-body">
+                      <h5 class="card-title">Самые продаваемые товары</h5>
+                      <p class="card-text">Продукты, которые постоянно нужны в нашей повседневной жизни</p>
+                      <small>
+                        С болшим уважения!<cite title="Source Title"> MyShop.kg</cite>
+                      </small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <hr style="border: dashed 2px #fc6d; width:85%">
+
+            <div class="container">
+              <h1 class="text-border-dark text-danger m-3 text-outline-danger  card-text-top" data-aos="fade-right">Наши популярные бренды</h1>
+              <div class="d-flex justify-content-between mt-4   flexs">
+                <div>
+                  <div class="card">
+                    <a href="#"><img src="img/icon1.jpg" alt=""></a>
+                  </div>
+                </div>
+                <div>
+                  <div class="card">
+                    <a href="#"><img src="img/icon2.jpg" alt=""></a>
+                  </div>
+                </div>
+                <div>
+                  <div class="card">
+                    <a href="#"><img src="img/icon3.jpg" alt=""></a>
+                  </div>
+                </div>
+                <div>
+                  <div class="card">
+                    <a href="#"><img src="img/icon4.jpg" alt=""></a>
+                  </div>
+                </div>
+                <div>
+                  <div class="card">
+                    <a href="#"><img src="img/icon5.jpg" alt=""></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-between mt-4  flexs">
+                <div>
+                  <div class="card">
+                    <a href="#"><img src="img/icon6.jpg" alt=""></a>
+                  </div>
+                </div>
+                <div>
+                  <div class="card">
+                    <a href="#"><img src="img/icon7.jpg" alt=""></a>
+                  </div>
+                </div>
+                <div>
+                  <div class="card">
+                    <a href="#"><img src="img/icon8.jpg" alt=""></a>
+                  </div>
+                </div>
+                <div>
+                  <div class="card">
+                    <a href="#"><img src="img/icon9.jpg" alt=""></a>
+                  </div>
+                </div>
+                <div>
+                  <div class="card">
+                    <a href="#"><img src="img/icon10.jpg" alt=""></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <hr  style="border: dashed 2px #fc6d; width:85%; margin: 40px auto;">
+
+            <div class="container">
+              <div class="text-center">
+                <div data-aos="zoom-in-up">
+                  <h1 class="text-border-dark text-danger m-3 text-outline-danger  card-text-top" data-aos="fade-right">Registration</h1>
+                </div>
+              </div>
+    
+              <div class="card p-4 bg-secondary" data-aos="zoom-in-up">
+                <form>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="inputEmail4">Email</label>
+                      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="inputPassword4">Password</label>
+                      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                    </div>
+                  </div>
+    
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="inputEmail4">Login</label>
+                      <input type="Login" class="form-control" id="inputLogin4" placeholder="Login">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="inputPassword4">UserName</label>
+                      <input type="Username" class="form-control" id="inputUsername4" placeholder="UserName">
+                    </div>
+                  </div>
+    
+                  <div class="form-group">
+                    <label for="inputAddress">A country</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="country">
+                  </div>
+    
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="inputCity">City</label>
+                      <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <div class="form-group col-md-4">
+                      <label for="inputState">State</label>
+                      <select id="inputState" class="form-control">
+                        <option>Conada</option>
+                        <option>Mexica</option>
+                        <option>Brasilia</option>
+                        <option>Urugvay</option>
+                        <option>Paragvay</option>
+                        <option>SNG</option>
+                        <option>UAR</option>
+                        <option>Moskov</option>
+                        <option>Novosibirsk</option>
+                        <option>Bishkek</option>
+                        <option selected>Osh</option>
+                        <option>Djalial-Abad</option>
+                        <option>Batken</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-md-2">
+                      <label for="inputZip">house</label>
+                      <input type="text" class="form-control" id="inputZip">
+                    </div>
+                  </div>
+    
+                  <div class="form-group text-center">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="gridCheck">
+                      <label class="form-check-label" for="gridCheck">
+                        I accept all the terms of the site and I agree
+                      </label>
+                    </div>
+                  </div>
+    
+                  <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Sign in</button>
+                  </div>
+                  
+                </form>
+              </div>
+            </div>
+        </main>
+
+        
+          
+          <footer>
+          <div class="justify-content-around m-4">
+            <div class="col-xxl-5">
+              <div class="d-flex justify-content-between   flexes">
+                <div class="card-body text-center">
+                  <h6 class="text-light">Для наших покупательях</h6>
+                  <ul class="text-light" style="list-style-type:none ;">
+                    <li class="text-light"><a class="link text-danger" href="#">Как сделать заказ</a></li>
+                    <li class="text-light"><a class="link text-danger" href="#">Способы оплаты</a></li>
+                    <li class="text-light"><a class="link text-danger" href="#">Доставка</a></li>
+                    <li class="text-light"><a class="link text-danger" href="#">Возврат товара</a></li>
+                    <li class="text-light"><a class="link text-danger" href="#">Возврат денежных средств</a></li>
+                  </ul>
+                </div>
+  
+                <div class="card-body text-center">
+                  <h6 class="text-light">Правила продажи</h6>
+                  <ul class="title text-light" style="list-style-type:none ;">
+                    <li class="text-light"><a class="link text-danger" href="#">Правила пользования торговой площадкой</a></li>
+                    <li class="text-light"><a class="link text-danger" href="#">Вопросы и ответы</a></li>
+                    <li class="text-light"><a class="link text-danger" href="#">Партнерам</a></li>
+                  </ul>
+                </div>
+
+                <div class="card-body text-center">
+                  <h6 class="text-light">Партнерская программа</h6>
+                  <ul class="title text-light" style="list-style-type:none ;">
+                    <li class="text-light"><a class="link text-danger" href="#">Наши проекты</a></li>
+                    <li class="text-light"><a class="link text-danger" href="#">ЗОЖ и спорт</a></li>
+                    <li class="text-light"><a class="link text-danger" href="#">Детям</a></li>
+                    <li class="text-light"><a class="link text-danger" href="#">Компания</a></li>
+                  </ul>
+                </div>
+
+                <div class="card-body text-center">
+                  <h6 class="text-light">О нас</h6>
+                  <ul class="title text-light" style="list-style-type:none ;">
+                    <li class="text-light"><a class="link text-danger" href="#">Реквизиты</a></li>
+                    <li class="text-light"><a class="link text-danger" href="#">Пресс-центр</a></li>
+                    <li class="text-light"><a class="link text-danger" href="#">Контакты</a></li>
+                  </ul>
+                </div>
+
+                <div class="card-body text-center">
+                  <h6 class="text-light">Мы в соцсетях</h6>
+                  <ul class="title text-light" style="list-style-type:none ;">
+                    <li class="text-light"><a class="link text-danger" href="#">Вконтакте</a></li>
+                    <li class="text-light"><a class="link text-danger" href="#">Facebook</a></li>
+                    <li class="text-light"><a class="link text-danger" href="#">Одноклассники</a></li>
+                    <li class="text-light"><a class="link text-danger" href="#">YouTube</a></li>
+                    <li class="text-light"><a class="link text-danger" href="#">Instagram</a></li>
+                  </ul>
+                </div>
+              
+              </div>
+            </div>
+          </div>
+
+          <div style="width: 90%; margin: 20px  auto; height: 4px; background-color: #6633ff; border: 1px solid rgb(24, 191, 30);border-radius: 2px;">
+            <div style="width: 60%; background-color: darkviolet; "></div>
+          </div>
+
+          <div class="container*-center m-5 auto text-center">
+            <div class="text-light">
+              <h5>2019-2020 &copy MyShopKG - Самый популяпный тогровлый центр и онлайн магазин</h5>
+              <p>Все право защищены. Доставка по всей Азии</p>
+
+              <div class="container">
+                <a class="link text-light" href="#"><p>Проверка совместного работы сайта</p></a>
+
+                <div class="m-2">
+                  <h5> Платежные системы</h5>
+                  <a href="#" class="link text-light" style="font-size: 20px;"><i class="fab fa-cc-mastercard"></i></a>
+                  <a href="#"><img src="img/qiwi.png" width="3%"  alt=""></a>
+                  <a href="#"><img src="img/payeer.png" width="3%"  alt=""></a>
+                  <a href="#" class="link text-light" style="font-size: 20px;"><i class="fab fa-cc-visa"></i></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          &copy;ITAcademy_ZurikProger
+        </footer>
+
+
+        
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+

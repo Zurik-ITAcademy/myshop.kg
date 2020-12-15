@@ -1,0 +1,14 @@
+.flexes{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flexs{
+    display: flex;
+    flex-wrap: wrap;
+    margin: px;
+}
+
+.flexs .card{
+    margin: 15px;
+}
